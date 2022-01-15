@@ -9,5 +9,14 @@
         android:id="@+id/glavniFragment"
         android:name="com.example.contact_helper.fragments.GlavniFragment"
         android:label="fragment_glavni"
-        tools:layout="@layout/fragment_glavni" />
+        tools:layout="@layout/fragment_glavni" >
+        <action
+            android:id="@+id/action_glavniFragment_to_smsFragment"
+            app:destination="@id/smsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/smsFragment"
+        android:name="com.example.contact_helper.fragments.SmsFragment"
+        android:label="fragment_sms"
+        tools:layout="@layout/fragment_sms" />
 </navigation>
